@@ -29,4 +29,12 @@ func SetupRoutes(app *fiber.App) {
 	description.Post("/", middleware.Protected(), handler.CreateDescription)
 	description.Patch("/:id", middleware.Protected(), handler.UpdateDescription)
 	description.Delete("/:id", middleware.Protected(), handler.DeleteDescription)
+
+	// Features
+	feature := api.Group("/feature")
+	feature.Get("/", handler.GetAllFeatures)
+	feature.Get("/:id", handler.GetFeature)
+	feature.Post("/", middleware.Protected(), handler.CreateFeature)
+	feature.Patch("/:id", middleware.Protected(), handler.UpdateFeature)
+	feature.Delete("/:id", middleware.Protected(), handler.DeleteFeature)
 }

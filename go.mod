@@ -14,6 +14,5 @@ require (
 	github.com/lib/pq v1.7.1 // indirect
 	github.com/stretchr/testify v1.6.1 // indirect
 	github.com/vrischmann/envconfig v1.2.0
-	golang.org/x/crypto v0.0.0-20200709230013-948cd5f35899
-	golang.org/x/sys v0.0.0-20200722175500-76b94024e4b6 // indirect
+	golang.org/x/crypto v0.1.0
 )
